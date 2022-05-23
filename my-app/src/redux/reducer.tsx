@@ -5,12 +5,10 @@ const initstate={
 }
 export const ProductReducer =(state=initstate,action:any)=>{ 
     switch (action.type) {
-        case GETDATA:
-          {state.Products=action.payload}
-          
+        
         default:
          {
-             return state;
+             return state=action.payload;
          }
       }
 }
