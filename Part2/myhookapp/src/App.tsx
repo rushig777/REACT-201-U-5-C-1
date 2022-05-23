@@ -4,17 +4,17 @@ import { useCounter } from "./hooks/useCounter";
 
 function App() {
   // Entire thing bellow should work. you don't have to edit this file, only implement  hooks
-  const [list, { push, pop,clear,reset,map }] = useList([1, 2, 3]);
+  const [list, { push, pop,map }] = useList([1, 2, 3]);
 
   const { value, inc, dec, set } = useCounter(10);
 
   return (
     <div className="App">
       <>
-      <button onClick={() => push(list.length+1)}>Append</button>
+      <button onClick={() => push(1)}>Append</button>
       <button onClick={() => pop()}>pop</button>
-      <button onClick={() => clear()}>clear</button>
-      <button onClick={() => reset()}>reset</button>
+      {/* <button onClick={() => clear()}>clear</button>
+      <button onClick={() => reset()}>reset</button> */}
       <button onClick={() => map((el:number) => el * 2)}>
         Double every element
       </button>

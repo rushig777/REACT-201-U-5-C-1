@@ -5,11 +5,11 @@ export const useList = (arr:number[]) => {
     const [list,setList]=useState<number[]>(arr)
 
     const push=(value:number)=> {
-
-        setList([...list,value])
+          const ans:number= list.length+value;
+        setList([...list,ans])
         return;
     }
-    const pop =()=>{
+    const pop=()=>{
        list.pop()
        setList(list);
     }
