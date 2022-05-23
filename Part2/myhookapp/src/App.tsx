@@ -13,8 +13,8 @@ function App() {
       <>
       <button onClick={() => push(1)}>Append</button>
       <button onClick={() => pop()}>pop</button>
-      {/* <button onClick={() => clear()}>clear</button>
-      <button onClick={() => reset()}>reset</button> */}
+      <button >clear</button>
+      <button>reset</button>
       <button onClick={() => map((el:number) => el * 2)}>
         Double every element
       </button>
